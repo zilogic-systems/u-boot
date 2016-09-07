@@ -1,0 +1,12 @@
+if TARGET_VERDEX
+
+config SYS_BOARD
+	default "verdex"
+
+config SYS_VENDOR
+	default "gumstix"
+
+config SYS_CONFIG_NAME
+	default "verdex"
+
+endif
