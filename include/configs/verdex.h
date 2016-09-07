@@ -4,6 +4,11 @@
  * Copyright (C) 2016 Zilogic Systems <code@zilogic.com>
  *
  * Based on Toradex Colibri PXA270 Support
+ *
+ * Copyright (C) 2010 Marek Vasut <marek.vasut@gmail.com>
+ * Copyright (C) 2015 Marcel Ziswiler <marcel@ziswiler.com>
+ *
+ * SPDX-License-Identifier:	GPL-2.0+
  */
 
 #ifndef	__CONFIG_H
@@ -174,7 +179,6 @@
 #define	CONFIG_SYS_CCCR		0x02000290
 
 /*
- * FIXME: Check if this required.
  * Memory settings
  */
 #define	CONFIG_SYS_MSC0_VAL	0x9ee1c5f2
@@ -187,6 +191,7 @@
 #define	CONFIG_SYS_SXCNFG_VAL	0x40044004
 
 /*
+ * FIXME: Check if this required.
  * PCMCIA and CF Interfaces
  */
 #define	CONFIG_SYS_MECR_VAL	0x00000000

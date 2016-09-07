@@ -4,6 +4,10 @@
  * Copyright (C) 2016 Zilogic Systems <code@zilogic.com>
  *
  * Based on Toradex Colibri PXA270 Support
+ *
+ * Copyright (C) 2010 Marek Vasut <marek.vasut@gmail.com>
+ *
+ * SPDX-License-Identifier:	GPL-2.0+
  */
 
 #include <common.h>
@@ -32,7 +36,6 @@ int board_init(void)
 	return 0;
 }
 
-/* FIXME: Check if this required. */
 int dram_init(void)
 {
 	pxa2xx_dram_init();
@@ -40,6 +43,7 @@ int dram_init(void)
 	return 0;
 }
 
+/* FIXME: Check if this required. */
 #ifdef	CONFIG_CMD_USB
 int board_usb_init(int index, enum usb_init_type init)
 {
@@ -92,7 +96,6 @@ void usb_board_stop(void)
 }
 #endif
 
-/* FIXME: Check if this required. */
 int board_eth_init(bd_t *bis)
 {
         int rc = 0;
@@ -102,6 +105,7 @@ int board_eth_init(bd_t *bis)
         return rc;
 }
 
+/* FIXME: Check if this required. */
 #ifdef	CONFIG_CMD_MMC
 int board_mmc_init(bd_t *bis)
 {
