@@ -1,9 +1,9 @@
 /*
- * Toradex Colibri PXA270 Support
+ * Gumstix Verdex Board Support
  *
- * Copyright (C) 2010 Marek Vasut <marek.vasut@gmail.com>
+ * Copyright (C) 2016 Zilogic Systems <code@zilogic.com>
  *
- * SPDX-License-Identifier:	GPL-2.0+
+ * Based on Toradex Colibri PXA270 Support
  */
 
 #include <common.h>
@@ -32,6 +32,7 @@ int board_init(void)
 	return 0;
 }
 
+/* FIXME: Check if this required. */
 int dram_init(void)
 {
 	pxa2xx_dram_init();
@@ -91,6 +92,7 @@ void usb_board_stop(void)
 }
 #endif
 
+/* FIXME: Check if this required. */
 int board_eth_init(bd_t *bis)
 {
         int rc = 0;

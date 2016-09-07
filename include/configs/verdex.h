@@ -1,10 +1,9 @@
 /*
- * Toradex Colibri PXA270 configuration file
+ * Gumstix Verdex Board Support
  *
- * Copyright (C) 2010 Marek Vasut <marek.vasut@gmail.com>
- * Copyright (C) 2015 Marcel Ziswiler <marcel@ziswiler.com>
+ * Copyright (C) 2016 Zilogic Systems <code@zilogic.com>
  *
- * SPDX-License-Identifier:	GPL-2.0+
+ * Based on Toradex Colibri PXA270 Support
  */
 
 #ifndef	__CONFIG_H
@@ -91,7 +90,7 @@
 #define	PHYS_SDRAM_1_SIZE		0x08000000	/* 128 MB */
 
 #define	CONFIG_SYS_DRAM_BASE		0xa0000000	/* CS0 */
-#define	CONFIG_SYS_DRAM_SIZE		0x08000000	/* 64 MB DRAM */
+#define	CONFIG_SYS_DRAM_SIZE		0x08000000	/* 128 MB DRAM */
 
 #define CONFIG_SYS_MEMTEST_START	0xa0400000	/* memtest works on */
 #define CONFIG_SYS_MEMTEST_END		0xa0800000	/* 4 ... 8 MB in DRAM */
@@ -175,6 +174,7 @@
 #define	CONFIG_SYS_CCCR		0x02000290
 
 /*
+ * FIXME: Check if this required.
  * Memory settings
  */
 #define	CONFIG_SYS_MSC0_VAL	0x9ee1c5f2
